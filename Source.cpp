@@ -5,6 +5,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <memory>
 
 #include "Global.h"
 #include "Renderer.h"
@@ -190,27 +191,55 @@ bool checkWin(std::vector<GameObject*> &allSceneObjects)
     }
     return win;
 }
+struct UserData
+{
+    std::vector<InterfaceObject*>* allInterfaceObjects;
+    bool &pause;
+
+    UserData(std::vector<InterfaceObject*>* objects, bool &pauseState) : allInterfaceObjects(objects), pause(pauseState) {}
+};
+
 void mouse_button_callback(GLFWwindow* window, int button, int action, int mods)
 {
     if (button == GLFW_MOUSE_BUTTON_LEFT && action == GLFW_PRESS)
     {
         double xpos, ypos;
         glfwGetCursorPos(window, &xpos, &ypos);
-       void* userPointer = glfwGetWindowUserPointer(window);
-       if (std::vector<InterfaceObject*>* allInterfaceObjectsPtr = static_cast<std::vector<InterfaceObject*>*>(userPointer))
-       {
-           for (int i = 0; i < allInterfaceObjectsPtr->size(); i++)
-           { 
-                   if (xpos > (*allInterfaceObjectsPtr)[i]->getX() && xpos < (*allInterfaceObjectsPtr)[i]->getX() + (*allInterfaceObjectsPtr)[i]->getWidth())
-                   {
-                       if(ypos > (*allInterfaceObjectsPtr)[i]->getY() && ypos < (*allInterfaceObjectsPtr)[i]->getY() + (*allInterfaceObjectsPtr)[i]->getHeight())
-                       {
-                           (*allInterfaceObjectsPtr)[i]->onClick();
-                       }
-                   }
-           }
-       }
 
+        void* userPointer = glfwGetWindowUserPointer(window);
+        if (UserData* userData = static_cast<UserData*>(userPointer))
+        {
+            for (int i = 0; i < userData->allInterfaceObjects->size(); i++)
+            {
+                if (xpos > (*userData->allInterfaceObjects)[i]->getX() && xpos < (*userData->allInterfaceObjects)[i]->getX() + (*userData->allInterfaceObjects)[i]->getWidth())
+                {
+                    if (ypos > (*userData->allInterfaceObjects)[i]->getY() && ypos < (*userData->allInterfaceObjects)[i]->getY() + (*userData->allInterfaceObjects)[i]->getHeight())
+                    {
+                        (*userData->allInterfaceObjects)[i]->onClick();
+                    }
+                }
+            }
+        }
+    }
+}
+void keyCallback(GLFWwindow* window, int key, int scancode, int action, int mods)
+{
+    if (key == GLFW_KEY_SPACE && action == GLFW_PRESS)
+    {
+        void* userPointer = glfwGetWindowUserPointer(window);
+        if (UserData* userData = static_cast<UserData*>(userPointer))
+        {
+            if (userData->pause == false)
+            {
+                userData->pause = true;
+            }
+            else
+            {
+                userData->pause = false;
+            }
+            
+        }
+        
     }
 }
 void hoverInterfaceObjects(int x, int y, std::vector<InterfaceObject*>& allInterfaceObjects)
@@ -294,7 +323,11 @@ int main(void)
 		shader.SetUniform1i("u_Texture", 1);
 
 
-        glfwSetWindowUserPointer(window, &allInterfaceObjects);
+        bool pause = false;
+        UserData userData(&allInterfaceObjects, pause);
+        
+
+        glfwSetWindowUserPointer(window, &userData);
 
        // level1(allSceneObjects);
 
@@ -316,6 +349,7 @@ int main(void)
         float lastFramesCursorPosition[6];
 
         glfwSetMouseButtonCallback(window, mouse_button_callback);
+        glfwSetKeyCallback(window, keyCallback);
         
         //Texture* texture2 = new Texture("res/textures/winScreen.png");
 
@@ -330,73 +364,77 @@ int main(void)
         /* Loop until the user closes the window */
         while (!glfwWindowShouldClose(window))
         {
-            glfwGetCursorPos(window, &xpos, &ypos);
-
-            if (checkWin(allSceneObjects) == true && startButton->getPointsPtr() != nullptr)
+            if (!pause)
             {
-               
-               levelGenerator.increaseLevel();
-               levelGenerator.generate();
-            }
+                glfwGetCursorPos(window, &xpos, &ypos);
 
-            for (int i = 0; i < allSceneObjects.size(); i++)
-            {
-                if (dynamic_cast<Rocket*>(allSceneObjects[i]))
+                if (checkWin(allSceneObjects) == true && startButton->getPointsPtr() != nullptr)
                 {
-                    Rocket* rocket = dynamic_cast<Rocket*>(allSceneObjects[i]);
-                    if (rocket->getOwner() == player)
+
+                    levelGenerator.increaseLevel();
+                    levelGenerator.generate();
+                }
+
+                for (int i = 0; i < allSceneObjects.size(); i++)
+                {
+                    if (dynamic_cast<Rocket*>(allSceneObjects[i]))
                     {
-                        rocket->setX(xpos - rocket->getWidth() / 2);
-                        rocket->setSpeed(lastFramesCursorPosition[5] - lastFramesCursorPosition[0]);
+                        Rocket* rocket = dynamic_cast<Rocket*>(allSceneObjects[i]);
+                        if (rocket->getOwner() == player)
+                        {
+                            rocket->setX(xpos - rocket->getWidth() / 2);
+                            rocket->setSpeed(lastFramesCursorPosition[5] - lastFramesCursorPosition[0]);
+                        }
                     }
                 }
-            }
 
-            hoverInterfaceObjects(xpos, ypos, allInterfaceObjects);
-            renderer.Clear();
+                hoverInterfaceObjects(xpos, ypos, allInterfaceObjects);
+                renderer.Clear();
 
-           rendererScene(allSceneObjects, renderer, shader, va, vb, layout, ib, window);
-            rendererInterfaceObjects(allInterfaceObjects, renderer, shader, va, vb, layout, ib, window);
+                rendererScene(allSceneObjects, renderer, shader, va, vb, layout, ib, window);
+                rendererInterfaceObjects(allInterfaceObjects, renderer, shader, va, vb, layout, ib, window);
 
-            collisionManager.checkCollisions();
+                collisionManager.checkCollisions();
 
 
-            lastFramesCursorPosition[5] = lastFramesCursorPosition[4];
-            lastFramesCursorPosition[4] = lastFramesCursorPosition[3];
-            lastFramesCursorPosition[3] = lastFramesCursorPosition[2];
-            lastFramesCursorPosition[2] = lastFramesCursorPosition[1];
-            lastFramesCursorPosition[1] = lastFramesCursorPosition[0];
-            lastFramesCursorPosition[0] = xpos;
+                lastFramesCursorPosition[5] = lastFramesCursorPosition[4];
+                lastFramesCursorPosition[4] = lastFramesCursorPosition[3];
+                lastFramesCursorPosition[3] = lastFramesCursorPosition[2];
+                lastFramesCursorPosition[2] = lastFramesCursorPosition[1];
+                lastFramesCursorPosition[1] = lastFramesCursorPosition[0];
+                lastFramesCursorPosition[0] = xpos;
 
-          
 
-          
 
-            loopCounter++;
-            if (loopCounter % 300 == 0)
-            {
-                clearDestroyed(allSceneObjects);
-            }
-            if (loopCounter == INT_MAX)
-            {
-                loopCounter = 0;
-            }
 
-            //TESTING DELETE LATER
-            double currentTime = glfwGetTime();
-            frameCount++;
-            if (currentTime - lastTime >= 1.0)
-            {
-                std::cout << "FPS: " << frameCount << std::endl;
 
-                frameCount = 0;
-                lastTime = currentTime;
-                std::cout << allSceneObjects.size() << std::endl;
+                loopCounter++;
+                if (loopCounter % 300 == 0)
+                {
+                    clearDestroyed(allSceneObjects);
+                }
+                if (loopCounter == INT_MAX)
+                {
+                    loopCounter = 0;
+                }
+
+                //TESTING DELETE LATER
+                double currentTime = glfwGetTime();
+                frameCount++;
+                if (currentTime - lastTime >= 1.0)
+                {
+                    std::cout << "FPS: " << frameCount << std::endl;
+
+                    frameCount = 0;
+                    lastTime = currentTime;
+                    std::cout << allSceneObjects.size() << std::endl;
+                }
+
+                /* Swap front and back buffers */
+                GLCall(glfwSwapBuffers(window));
             }
             /* Poll for and process events */
             GLCall(glfwPollEvents());
-            /* Swap front and back buffers */
-            GLCall(glfwSwapBuffers(window));
         }
     glfwTerminate();
     return 0;

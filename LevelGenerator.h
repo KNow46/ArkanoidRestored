@@ -43,7 +43,7 @@ public:
 				allSceneObjects.push_back(new Block(50 + i * 60, 200, 60, 30, texture3, 2, pointsPtr));
 			}
 		}
-		else if (currentLevel == 22)
+		else if (currentLevel == 2)
 		{
 
 			Texture* texture = new Texture("res/textures/rocket.png");
@@ -141,7 +141,7 @@ public:
 				allSceneObjects.push_back(new BallBlock(50 + i * 120, 150, 60, 30, texture4, 2, allSceneObjects, pointsPtr));
 			}
 		}
-		else if (currentLevel ==2 )
+		else if (currentLevel >5 )
 		{
 			Texture* texture = new Texture("res/textures/winScreen2.png");
 
