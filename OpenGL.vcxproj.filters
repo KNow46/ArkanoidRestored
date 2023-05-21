@@ -133,7 +133,4 @@
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>
-  <ItemGroup>
-    <Image Include="res\textures\ship.png" />
-  </ItemGroup>
 </Project>

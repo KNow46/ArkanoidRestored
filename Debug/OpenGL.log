@@ -1,278 +1,82 @@
-﻿  BallBlock.cpp
-C:\Users\Krzysztof\Desktop\arkanoidbackup\GameObject.h(33,32): warning C4244: "return": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\GameObject.h(34,32): warning C4244: "return": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(63,21): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(66,13): warning C4244: "inicjowanie": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(74,83): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(74,67): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(74,48): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(74,37): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(81,84): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(81,68): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(81,48): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(81,37): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(88,84): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(88,68): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(88,48): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(88,37): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(95,84): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(95,68): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(95,48): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(95,37): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(102,84): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(102,68): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(102,48): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(102,37): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(109,84): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(109,68): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(109,48): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(109,37): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(116,84): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(116,68): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(116,48): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(116,37): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(123,84): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(123,68): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(123,48): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(123,37): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(130,84): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(130,68): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(130,48): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(130,37): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(137,84): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(137,68): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(137,48): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(137,37): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Ball.h(85,36): warning C4244: "return": konwersja z "double" do "float", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Ball.h(86,36): warning C4244: "return": konwersja z "double" do "float", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Ball.h(87,40): warning C4244: "return": konwersja z "double" do "float", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Ball.h(88,40): warning C4244: "return": konwersja z "double" do "float", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\BallBlock.cpp(10,51): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\BallBlock.cpp(10,39): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-  Block.cpp
-C:\Users\Krzysztof\Desktop\arkanoidbackup\GameObject.h(33,32): warning C4244: "return": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\GameObject.h(34,32): warning C4244: "return": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(63,21): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(66,13): warning C4244: "inicjowanie": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(74,83): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(74,67): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(74,48): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(74,37): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(81,84): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(81,68): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(81,48): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(81,37): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(88,84): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(88,68): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(88,48): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(88,37): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(95,84): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(95,68): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(95,48): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(95,37): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(102,84): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(102,68): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(102,48): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(102,37): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(109,84): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(109,68): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(109,48): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(109,37): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(116,84): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(116,68): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(116,48): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(116,37): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(123,84): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(123,68): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(123,48): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(123,37): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(130,84): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(130,68): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(130,48): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(130,37): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(137,84): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(137,68): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(137,48): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(137,37): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-  CollisionManager.cpp
-C:\Users\Krzysztof\Desktop\arkanoidbackup\GameObject.h(33,32): warning C4244: "return": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\GameObject.h(34,32): warning C4244: "return": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Ball.h(85,36): warning C4244: "return": konwersja z "double" do "float", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Ball.h(86,36): warning C4244: "return": konwersja z "double" do "float", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Ball.h(87,40): warning C4244: "return": konwersja z "double" do "float", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Ball.h(88,40): warning C4244: "return": konwersja z "double" do "float", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(63,21): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(66,13): warning C4244: "inicjowanie": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(74,83): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(74,67): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(74,48): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(74,37): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(81,84): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(81,68): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(81,48): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(81,37): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(88,84): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(88,68): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(88,48): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(88,37): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(95,84): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(95,68): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(95,48): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(95,37): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(102,84): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(102,68): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(102,48): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(102,37): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(109,84): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(109,68): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(109,48): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(109,37): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(116,84): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(116,68): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(116,48): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(116,37): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(123,84): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(123,68): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(123,48): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(123,37): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(130,84): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(130,68): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(130,48): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(130,37): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(137,84): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(137,68): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(137,48): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(137,37): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\CollisionManager.cpp(9,20): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
-C:\Users\Krzysztof\Desktop\arkanoidbackup\CollisionManager.cpp(20,28): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\CollisionManager.cpp(25,43): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\CollisionManager.cpp(30,29): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\CollisionManager.cpp(35,23): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
-C:\Users\Krzysztof\Desktop\arkanoidbackup\CollisionManager.cpp(49,56): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\CollisionManager.cpp(60,37): warning C4244: "=": konwersja z "int" do "float", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\CollisionManager.cpp(61,37): warning C4244: "=": konwersja z "int" do "float", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\CollisionManager.cpp(64,37): warning C4244: "=": konwersja z "int" do "float", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\CollisionManager.cpp(65,34): warning C4244: "=": konwersja z "int" do "float", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\CollisionManager.cpp(68,37): warning C4244: "=": konwersja z "int" do "float", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\CollisionManager.cpp(69,37): warning C4244: "=": konwersja z "int" do "float", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\CollisionManager.cpp(72,34): warning C4244: "=": konwersja z "int" do "float", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\CollisionManager.cpp(73,37): warning C4244: "=": konwersja z "int" do "float", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\CollisionManager.cpp(76,37): warning C4244: "=": konwersja z "int" do "float", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\CollisionManager.cpp(77,37): warning C4244: "=": konwersja z "int" do "float", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\CollisionManager.cpp(80,37): warning C4244: "=": konwersja z "int" do "float", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\CollisionManager.cpp(81,37): warning C4244: "=": konwersja z "int" do "float", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\CollisionManager.cpp(84,37): warning C4244: "=": konwersja z "int" do "float", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\CollisionManager.cpp(85,37): warning C4244: "=": konwersja z "int" do "float", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\CollisionManager.cpp(88,37): warning C4244: "=": konwersja z "int" do "float", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\CollisionManager.cpp(89,37): warning C4244: "=": konwersja z "int" do "float", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\CollisionManager.cpp(90,23): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
-C:\Users\Krzysztof\Desktop\arkanoidbackup\CollisionManager.cpp(128,57): warning C4244: "argument": konwersja z "float" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\CollisionManager.cpp(128,39): warning C4244: "argument": konwersja z "float" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\CollisionManager.cpp(143,57): warning C4244: "argument": konwersja z "float" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\CollisionManager.cpp(143,39): warning C4244: "argument": konwersja z "float" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\CollisionManager.cpp(158,57): warning C4244: "argument": konwersja z "float" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\CollisionManager.cpp(158,39): warning C4244: "argument": konwersja z "float" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\CollisionManager.cpp(173,57): warning C4244: "argument": konwersja z "float" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\CollisionManager.cpp(173,39): warning C4244: "argument": konwersja z "float" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\CollisionManager.cpp(178,57): warning C4244: "argument": konwersja z "float" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\CollisionManager.cpp(178,39): warning C4244: "argument": konwersja z "float" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\CollisionManager.cpp(186,57): warning C4244: "argument": konwersja z "float" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\CollisionManager.cpp(186,39): warning C4244: "argument": konwersja z "float" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\CollisionManager.cpp(195,57): warning C4244: "argument": konwersja z "float" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\CollisionManager.cpp(195,39): warning C4244: "argument": konwersja z "float" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\CollisionManager.cpp(205,57): warning C4244: "argument": konwersja z "float" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\CollisionManager.cpp(205,39): warning C4244: "argument": konwersja z "float" do "int", możliwa utrata danych
-  Global.cpp
-  IndexBuffer.cpp
-  Renderer.cpp
-  Shader.cpp
-  Source.cpp
-C:\Users\Krzysztof\Desktop\arkanoidbackup\GameObject.h(33,32): warning C4244: "return": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\GameObject.h(34,32): warning C4244: "return": konwersja z "double" do "int", możliwa utrata danych
+﻿  Source.cpp
+C:\Users\Krzysztof\source\repos\arkanoidbackup\GameObject.h(33,32): warning C4244: "return": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\Krzysztof\source\repos\arkanoidbackup\GameObject.h(34,32): warning C4244: "return": konwersja z "double" do "int", możliwa utrata danych
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\shared\minwindef.h(130,1): warning C4005: "APIENTRY": ponowna definicja makra
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Depedencies\GLFW\include\GLFW\glfw3.h(123,1): message : zobacz poprzednią definicję „APIENTRY”
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Ball.h(85,36): warning C4244: "return": konwersja z "double" do "float", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Ball.h(86,36): warning C4244: "return": konwersja z "double" do "float", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Ball.h(87,40): warning C4244: "return": konwersja z "double" do "float", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Ball.h(88,40): warning C4244: "return": konwersja z "double" do "float", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(63,21): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(66,13): warning C4244: "inicjowanie": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(74,83): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(74,67): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(74,48): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(74,37): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(81,84): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(81,68): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(81,48): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(81,37): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(88,84): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(88,68): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(88,48): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(88,37): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(95,84): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(95,68): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(95,48): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(95,37): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(102,84): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(102,68): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(102,48): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(102,37): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(109,84): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(109,68): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(109,48): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(109,37): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(116,84): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(116,68): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(116,48): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(116,37): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(123,84): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(123,68): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(123,48): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(123,37): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(130,84): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(130,68): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(130,48): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(130,37): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(137,84): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(137,68): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(137,48): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Text.h(137,37): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Source.cpp(38,18): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Source.cpp(42,64): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Source.cpp(49,23): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Source.cpp(54,52): warning C4244: "argument": konwersja z "int" do "const float", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Source.cpp(54,106): warning C4244: "argument": konwersja z "int" do "const float", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Source.cpp(55,55): warning C4244: "argument": konwersja z "int" do "const float", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Source.cpp(55,136): warning C4244: "argument": konwersja z "int" do "const float", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Source.cpp(56,55): warning C4244: "argument": konwersja z "int" do "const float", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Source.cpp(56,133): warning C4244: "argument": konwersja z "int" do "const float", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Source.cpp(57,53): warning C4244: "argument": konwersja z "int" do "const float", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Source.cpp(57,103): warning C4244: "argument": konwersja z "int" do "const float", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Source.cpp(76,35): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Source.cpp(90,23): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Source.cpp(95,56): warning C4244: "argument": konwersja z "int" do "const float", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Source.cpp(95,114): warning C4244: "argument": konwersja z "int" do "const float", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Source.cpp(96,59): warning C4244: "argument": konwersja z "int" do "const float", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Source.cpp(96,148): warning C4244: "argument": konwersja z "int" do "const float", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Source.cpp(97,59): warning C4244: "argument": konwersja z "int" do "const float", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Source.cpp(97,145): warning C4244: "argument": konwersja z "int" do "const float", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Source.cpp(98,57): warning C4244: "argument": konwersja z "int" do "const float", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Source.cpp(98,111): warning C4244: "argument": konwersja z "int" do "const float", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Source.cpp(115,35): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Source.cpp(181,23): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Source.cpp(202,30): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Source.cpp(218,23): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Source.cpp(342,31): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Source.cpp(349,43): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Source.cpp(355,41): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Source.cpp(355,35): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Krzysztof\Desktop\arkanoidbackup\Source.cpp(369,43): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
-  stb_image.cpp
-  Texture.cpp
-  VertexArray.cpp
-  VertexBuffer.cpp
-  Generowanie kodu...
-LINK : warning LNK4098: domyślna biblioteka „MSVCRT” powoduje konflikt z innymi bibliotekami; użyj opcji /NODEFAULTLIB:biblioteka
-LINK : warning LNK4098: domyślna biblioteka „LIBCMT” powoduje konflikt z innymi bibliotekami; użyj opcji /NODEFAULTLIB:biblioteka
-glew32s.lib(glew.obj) : warning LNK4099: nie znaleziono pliku PDB „” z elementem „glew32s.lib(glew.obj)” lub w pozycji „”; obiekt zostanie skonsolidowany bez informacji debugowania
-  OpenGL.vcxproj -> C:\Users\Krzysztof\Desktop\arkanoidbackup\Debug\OpenGL.exe
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Depedencies\GLFW\include\GLFW\glfw3.h(123,1): message : zobacz poprzednią definicję „APIENTRY”
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Ball.h(85,36): warning C4244: "return": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Ball.h(86,36): warning C4244: "return": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Ball.h(87,40): warning C4244: "return": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Ball.h(88,40): warning C4244: "return": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.h(63,21): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.h(66,13): warning C4244: "inicjowanie": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.h(74,83): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.h(74,67): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.h(74,48): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.h(74,37): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.h(81,84): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.h(81,68): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.h(81,48): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.h(81,37): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.h(88,84): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.h(88,68): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.h(88,48): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.h(88,37): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.h(95,84): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.h(95,68): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.h(95,48): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.h(95,37): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.h(102,84): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.h(102,68): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.h(102,48): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.h(102,37): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.h(109,84): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.h(109,68): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.h(109,48): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.h(109,37): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.h(116,84): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.h(116,68): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.h(116,48): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.h(116,37): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.h(123,84): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.h(123,68): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.h(123,48): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.h(123,37): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.h(130,84): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.h(130,68): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.h(130,48): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.h(130,37): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.h(137,84): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.h(137,68): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.h(137,48): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.h(137,37): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Source.cpp(38,18): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Source.cpp(42,64): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Source.cpp(49,23): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Source.cpp(54,52): warning C4244: "argument": konwersja z "int" do "const float", możliwa utrata danych
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Source.cpp(54,106): warning C4244: "argument": konwersja z "int" do "const float", możliwa utrata danych
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Source.cpp(55,55): warning C4244: "argument": konwersja z "int" do "const float", możliwa utrata danych
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Source.cpp(55,136): warning C4244: "argument": konwersja z "int" do "const float", możliwa utrata danych
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Source.cpp(56,55): warning C4244: "argument": konwersja z "int" do "const float", możliwa utrata danych
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Source.cpp(56,133): warning C4244: "argument": konwersja z "int" do "const float", możliwa utrata danych
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Source.cpp(57,53): warning C4244: "argument": konwersja z "int" do "const float", możliwa utrata danych
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Source.cpp(57,103): warning C4244: "argument": konwersja z "int" do "const float", możliwa utrata danych
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Source.cpp(76,35): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Source.cpp(90,23): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Source.cpp(95,56): warning C4244: "argument": konwersja z "int" do "const float", możliwa utrata danych
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Source.cpp(95,114): warning C4244: "argument": konwersja z "int" do "const float", możliwa utrata danych
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Source.cpp(96,59): warning C4244: "argument": konwersja z "int" do "const float", możliwa utrata danych
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Source.cpp(96,148): warning C4244: "argument": konwersja z "int" do "const float", możliwa utrata danych
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Source.cpp(97,59): warning C4244: "argument": konwersja z "int" do "const float", możliwa utrata danych
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Source.cpp(97,145): warning C4244: "argument": konwersja z "int" do "const float", możliwa utrata danych
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Source.cpp(98,57): warning C4244: "argument": konwersja z "int" do "const float", możliwa utrata danych
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Source.cpp(98,111): warning C4244: "argument": konwersja z "int" do "const float", możliwa utrata danych
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Source.cpp(115,35): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Source.cpp(181,23): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Source.cpp(202,30): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Source.cpp(218,23): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Source.cpp(342,31): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Source.cpp(349,43): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Source.cpp(355,41): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Source.cpp(355,35): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Source.cpp(369,43): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+  OpenGL.vcxproj -> C:\Users\Krzysztof\source\repos\arkanoidbackup\Debug\OpenGL.exe
