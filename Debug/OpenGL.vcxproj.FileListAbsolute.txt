@@ -1,0 +1,2 @@
+C:\Users\Krzysztof\source\repos\OpenGL\Debug\OpenGL.exe
+C:\Users\Krzysztof\Desktop\arkanoidbackup\Debug\OpenGL.exe
