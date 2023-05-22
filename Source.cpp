@@ -27,6 +27,7 @@
 #include "InterfaceObject.h"
 #include "StartButton.h"
 #include "Text.h"
+#include "HighScoresButton.h"
 
 //transforms to range (-1,1)
 //if transforming point set length to 0
@@ -59,9 +60,7 @@ void rendererScene(std::vector<GameObject*>sceneObjects, Renderer& renderer, Sha
             };
 
            vb.changeData(positionsTransformed, 4 * 4 * sizeof(float));
-            //va.AddBuffer(vb, layout);
-           // va.Bind();
-           
+;           
             sceneObjects[i]->getTexture()->Bind(1);
 
             renderer.Draw(va, ib, shader);
@@ -334,11 +333,17 @@ int main(void)
         Texture* startButtonTexture = new Texture("res/textures/startButton.png");
         Texture* startButtonHoveredTexture = new Texture("res/textures/startButtonHovered.png");
 
+
         LevelGenerator levelGenerator(allSceneObjects, allInterfaceObjects);
 
         StartButton *startButton= new StartButton(windowWidth / 2 - 75, 100, 150, 80, startButtonTexture, allInterfaceObjects, startButtonHoveredTexture, levelGenerator);
         allInterfaceObjects.push_back(startButton);
 
+
+        Texture* highscoresButtonTexture = new Texture("res/textures/highscoresButton.png");
+        Texture* highscoresButtonHoveredTexture = new Texture("res/textures/highscoresButtonHovered.png");
+        HighscoresButton* highscoresButton = new HighscoresButton(windowWidth / 2 - 75, 200, 150, 80, highscoresButtonTexture, allInterfaceObjects, highscoresButtonHoveredTexture);
+        allInterfaceObjects.push_back(highscoresButton);
        
 
        // allInterfaceObjects[0]->setIsVisible(true);
@@ -368,7 +373,7 @@ int main(void)
             {
                 glfwGetCursorPos(window, &xpos, &ypos);
 
-                if (checkWin(allSceneObjects) == true && startButton->getPointsPtr() != nullptr)
+                if (checkWin(allSceneObjects) == true && startButton->isGameStarted() == true)
                 {
 
                     levelGenerator.increaseLevel();
@@ -429,6 +434,7 @@ int main(void)
                     lastTime = currentTime;
                     std::cout << allSceneObjects.size() << std::endl;
                 }
+
 
                 /* Swap front and back buffers */
                 GLCall(glfwSwapBuffers(window));

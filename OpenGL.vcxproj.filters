@@ -132,5 +132,8 @@
     <ClInclude Include="Text.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="HighScoresButton.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
