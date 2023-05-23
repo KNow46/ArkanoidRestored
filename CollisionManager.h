@@ -11,6 +11,7 @@ class CollisionManager
 {
 public:
 	CollisionManager(const std::vector<GameObject*> &v) : allSceneObjects(v), bounceTimer(0) {};
+
 	void checkCollisions();
 
 private:

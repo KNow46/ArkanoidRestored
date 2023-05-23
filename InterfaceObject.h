@@ -6,14 +6,12 @@ class InterfaceObject : public GameObject
 public:
 	InterfaceObject(int x, int y, int height, int width, const Texture* texture, const Texture* hoverTexture)
 		:GameObject(x, y, height, width, texture),  isHovered(0), hoverTexture(hoverTexture) {};
+	InterfaceObject(int x, int y, int height, int width, const Texture* texture)
+		:GameObject(x, y, height, width, texture), isHovered(0), hoverTexture(texture) {};
 
-	//bool getIsVisible() { return isVisible; };
 	virtual void onClick() {};
 	void ballCollisionEffect() {};
-	/*void setIsVisible(bool visibility)
-	{
-		isVisible = visibility;
-	}*/
+	
 	void setIsHovered(bool isHovered)
 	{
 		this->isHovered = isHovered;

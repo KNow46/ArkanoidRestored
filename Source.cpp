@@ -85,6 +85,7 @@ void rendererScene(std::vector<GameObject*>sceneObjects, Renderer& renderer, Sha
         }
     }	
 }
+
 void rendererInterfaceObjects(std::vector<InterfaceObject*>interfaceObjects, Renderer& renderer, Shader& shader, VertexArray& va, VertexBuffer& vb, VertexBufferLayout& layout, IndexBuffer& ib, GLFWwindow* window)
 {
     for (int i = 0; i < interfaceObjects.size(); i++)
@@ -125,34 +126,6 @@ void rendererInterfaceObjects(std::vector<InterfaceObject*>interfaceObjects, Ren
     }
 }
 
-
-//void level1(std::vector<GameObject*> &allSceneObjects)
-//{
-//	Texture* texture = new Texture("res/textures/rocket.png");
-//    Texture* texture2 = new Texture("res/textures/ball.png");
-//    Texture* texture3= new Texture("res/textures/block.png");
-//    Texture* texture4 = new Texture("res/textures/BallBlock.png");
-//
-//
-//	allSceneObjects.push_back(new Rocket(0, 440, 120, 30, *texture, "res/textures/rocketAnimation", 43,player));
-//	allSceneObjects.push_back(new Ball(200, 300, 40, 40, *texture2, 4, 4, "res/textures/ballAnimation", 15));
-//
-//	for (int i = 0; i < 9; i++)
-//	{
-//		allSceneObjects.push_back(new Block(50 + i * 60, 200, 60, 30, *texture3, 2));
-//	}
-//	for (int i = 0; i < 5; i++)
-//	{
-//		allSceneObjects.push_back(new BallBlock(50 + i * 120, 150, 60, 30, *texture4, 2, allSceneObjects));
-//	}
-//	for (int i = 0; i < 9; i++)
-//	{
-//		allSceneObjects.push_back(new Block(50 + i * 60, 100, 60, 30, *texture3, 2));
-//	}
-//
-//
-//	allSceneObjects.push_back(new Background("res/textures/backgroundAnimation", *texture2, 27));
-//}
 void clearDestroyed(std::vector <GameObject*>& allSceneObjects)
 {
     std::vector<GameObject*> newAllSceneObjects;
@@ -175,6 +148,7 @@ void clearDestroyed(std::vector <GameObject*>& allSceneObjects)
     //std::cout << allSceneObjects.size() << std::endl;
   
 }
+
 bool checkWin(std::vector<GameObject*> &allSceneObjects)
 {
     bool win = true;
@@ -190,6 +164,7 @@ bool checkWin(std::vector<GameObject*> &allSceneObjects)
     }
     return win;
 }
+
 struct UserData
 {
     std::vector<InterfaceObject*>* allInterfaceObjects;
@@ -273,7 +248,7 @@ int main(void)
     if (!glfwInit())
         return -1;
     /* Create a windowed mode window and its OpenGL context */
-    window = glfwCreateWindow(windowWidth, windowHeight, "Hello World", NULL, NULL);
+    window = glfwCreateWindow(windowWidth, windowHeight, "Arkanoid", NULL, NULL);
     if (!window)
     {
         glfwTerminate();
@@ -342,7 +317,9 @@ int main(void)
 
         Texture* highscoresButtonTexture = new Texture("res/textures/highscoresButton.png");
         Texture* highscoresButtonHoveredTexture = new Texture("res/textures/highscoresButtonHovered.png");
-        HighscoresButton* highscoresButton = new HighscoresButton(windowWidth / 2 - 75, 200, 150, 80, highscoresButtonTexture, allInterfaceObjects, highscoresButtonHoveredTexture);
+
+
+        HighscoresButton* highscoresButton = new HighscoresButton(windowWidth / 2 - 75, 200, 150, 80, highscoresButtonTexture, allInterfaceObjects, highscoresButtonHoveredTexture, levelGenerator);
         allInterfaceObjects.push_back(highscoresButton);
        
 
@@ -408,9 +385,6 @@ int main(void)
                 lastFramesCursorPosition[2] = lastFramesCursorPosition[1];
                 lastFramesCursorPosition[1] = lastFramesCursorPosition[0];
                 lastFramesCursorPosition[0] = xpos;
-
-
-
 
 
                 loopCounter++;
