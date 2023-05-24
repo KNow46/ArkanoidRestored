@@ -28,138 +28,106 @@ public:
 		}
 		if (currentLevel == 1)
 		{
-			//Texture* texture4 = new Texture("res/textures/BallBlock.png");
 
-			allSceneObjects.push_back(new Background("res/textures/backgroundAnimation", new Texture("res/textures/empty.png"), 28));
+			allSceneObjects.push_back(new Background("res/textures/backgroundAnimation", 28));
 
-			allSceneObjects.push_back(new Rocket(0, 440, 120, 30, new Texture("res/textures/rocket.png"), "res/textures/rocketAnimation", 43, player));
+			allSceneObjects.push_back(new Rocket(0, 440, 120, 30, "res/textures/rocketAnimation", 43, player));
 
 			allSceneObjects.push_back(new Ball(200, 300, 40, 40, -4, -4, "res/textures/ballAnimation", 15));
 
 			for (int i = 0; i < 9; i++)
 			{
-				allSceneObjects.push_back(new Block(50 + i * 60, 200, 60, 30, new Texture("res/textures/block.png"), 2, pointsPtr));
+				allSceneObjects.push_back(new Block(50 + i * 60, 200, 60, 30,"res/textures/block.png", 2, pointsPtr));
 			}
 		}
 		else if (currentLevel == 2)
 		{
 
-			Texture* texture = new Texture("res/textures/rocket.png");
-			Texture* texture2 = new Texture("res/textures/ball.png");
-			Texture* texture3 = new Texture("res/textures/block.png");
-			Texture* texture4 = new Texture("res/textures/BallBlock.png");
+			allSceneObjects.push_back(new Background("res/textures/backgroundAnimation", 28));
 
-			allSceneObjects.push_back(new Background("res/textures/backgroundAnimation", new Texture("res/textures/empty.png"), 28));
-
-			allSceneObjects.push_back(new Rocket(0, 440, 120, 30, new Texture("res/textures/rocket.png"), "res/textures/rocketAnimation", 43, player));
+			allSceneObjects.push_back(new Rocket(0, 440, 120, 30, "res/textures/rocketAnimation", 43, player));
 
 			allSceneObjects.push_back(new Ball(200, 300, 40, 40, -4, -4, "res/textures/ballAnimation", 15));
 
 
 			for (int i = 0; i < 9; i++)
 			{
-				Texture* blockTexture = new Texture("res/textures/block.png");
-				allSceneObjects.push_back(new Block(50 + i * 60, 200, 60, 30, blockTexture, 2, pointsPtr));
+				allSceneObjects.push_back(new Block(50 + i * 60, 200, 60, 30, "res/textures/block.png", 2, pointsPtr));
 			}
 			for (int i = 0; i < 5; i++)
 			{
-				allSceneObjects.push_back(new BallBlock(50 + i * 120, 150, 60, 30, texture4, 2, allSceneObjects, pointsPtr));
+				allSceneObjects.push_back(new BallBlock(50 + i * 120, 150, 60, 30, "res/textures/BallBlock.png", 2, allSceneObjects, pointsPtr));
 			}
 
 		}
 		else if (currentLevel == 3)
 		{
-			Texture* texture = new Texture("res/textures/rocket.png");
-			Texture* texture2 = new Texture("res/textures/ball.png");
-			Texture* texture3 = new Texture("res/textures/block.png");
-			Texture* texture4 = new Texture("res/textures/BallBlock.png");
 
-			allSceneObjects.push_back(new Background("res/textures/backgroundAnimation", texture2, 28));
+			allSceneObjects.push_back(new Background("res/textures/backgroundAnimation", 28));
 
-			allSceneObjects.push_back(new Rocket(0, 440, 120, 30, texture, "res/textures/rocketAnimation", 43, player));
+			allSceneObjects.push_back(new Rocket(0, 440, 120, 30, "res/textures/rocketAnimation", 43, player));
 
 			allSceneObjects.push_back(new Ball(200, 300, 40, 40, -4, -4, "res/textures/ballAnimation", 15));
 
 			for (int i = 0; i < 9; i++)
 			{
-				Texture* blockTexture = new Texture("res/textures/block.png");
-				allSceneObjects.push_back(new Block(50 + i * 60, 200, 60, 30, blockTexture, 2, pointsPtr));
+				allSceneObjects.push_back(new Block(50 + i * 60, 200, 60, 30, "res/textures/block.png", 2, pointsPtr));
 			}
 			for (int i = 0; i < 9; i++)
 			{
-				Texture* blockTexture = new Texture("res/textures/block.png");
-				allSceneObjects.push_back(new Block(50 + i * 60, 250, 60, 30, blockTexture, 2, pointsPtr));
+				allSceneObjects.push_back(new Block(50 + i * 60, 250, 60, 30, "res/textures/block.png", 2, pointsPtr));
 			}
 		}
 		else if (currentLevel == 4)
 		{
-			Texture* texture = new Texture("res/textures/rocket.png");
-			Texture* texture2 = new Texture("res/textures/ball.png");
-			Texture* texture3 = new Texture("res/textures/block.png");
-			Texture* texture4 = new Texture("res/textures/BallBlock.png");
 
-			allSceneObjects.push_back(new Background("res/textures/backgroundAnimation", texture2, 28));
+			allSceneObjects.push_back(new Background("res/textures/backgroundAnimation",28));
 
-			allSceneObjects.push_back(new Rocket(0, 440, 120, 30, texture, "res/textures/rocketAnimation", 43, player));
+			allSceneObjects.push_back(new Rocket(0, 440, 120, 30, "res/textures/rocketAnimation", 43, player));
 
 			allSceneObjects.push_back(new Ball(200, 300, 40, 40, -4, -4, "res/textures/ballAnimation", 15));
 
 			for (int i = 0; i < 9; i++)
 			{
-				Texture* blockTexture = new Texture("res/textures/block.png");
-				allSceneObjects.push_back(new Block(50 + i * 60, 200, 60, 30, blockTexture, 2, pointsPtr));
+				allSceneObjects.push_back(new Block(50 + i * 60, 200, 60, 30, "res/textures/block.png", 2, pointsPtr));
 			}
 			for (int i = 0; i < 9; i++)
 			{
-				Texture* blockTexture = new Texture("res/textures/block.png");
-				allSceneObjects.push_back(new Block(50 + i * 60, 250, 60, 30, blockTexture, 2, pointsPtr));
+				allSceneObjects.push_back(new Block(50 + i * 60, 250, 60, 30, "res/textures/block.png", 2, pointsPtr));
 			}
 			for (int i = 0; i < 9; i++)
 			{
-				Texture* blockTexture = new Texture("res/textures/block.png");
-				allSceneObjects.push_back(new Block(50 + i * 60, 150, 60, 30, blockTexture, 2, pointsPtr));
+				allSceneObjects.push_back(new Block(50 + i * 60, 150, 60, 30, "res/textures/block.png", 2, pointsPtr));
 			}
 		}
 		else if (currentLevel == 5)
 		{
-			Texture* texture = new Texture("res/textures/rocket.png");
-			Texture* texture2 = new Texture("res/textures/ball.png");
-			Texture* texture3 = new Texture("res/textures/block.png");
-			Texture* texture4 = new Texture("res/textures/BallBlock.png");
+			allSceneObjects.push_back(new Background("res/textures/backgroundAnimation", 28));
 
-			allSceneObjects.push_back(new Background("res/textures/backgroundAnimation", texture2, 28));
-
-			allSceneObjects.push_back(new Rocket(0, 440, 120, 30, texture, "res/textures/rocketAnimation", 43, player));
+			allSceneObjects.push_back(new Rocket(0, 440, 120, 30,"res/textures/rocketAnimation", 43, player));
 
 			allSceneObjects.push_back(new Ball(200, 300, 40, 40, -4, -4, "res/textures/ballAnimation", 15));
 
 			for (int i = 0; i < 9; i++)
 			{
-				Texture* blockTexture = new Texture("res/textures/block.png");
-				allSceneObjects.push_back(new Block(50 + i * 60, 200, 60, 30, blockTexture, 2, pointsPtr));
+				allSceneObjects.push_back(new Block(50 + i * 60, 200, 60, 30, "res/textures/block.png", 2, pointsPtr));
 			}
 			for (int i = 0; i < 9; i++)
 			{
-				Texture* blockTexture = new Texture("res/textures/block.png");
-				allSceneObjects.push_back(new Block(50 + i * 60, 250, 60, 30, blockTexture, 2, pointsPtr));
+				allSceneObjects.push_back(new Block(50 + i * 60, 250, 60, 30, "res/textures/block.png", 2, pointsPtr));
 			}
 			for (int i = 0; i < 9; i++)
 			{
-				Texture* blockTexture = new Texture("res/textures/block.png");
-				allSceneObjects.push_back(new Block(50 + i * 60, 100, 60, 30, blockTexture, 2, pointsPtr));
+				allSceneObjects.push_back(new Block(50 + i * 60, 100, 60, 30, "res/textures/block.png", 2, pointsPtr));
 			}
 			for (int i = 0; i < 5; i++)
 			{
-				Texture* blockTexture = new Texture("res/textures/block.png");
-				allSceneObjects.push_back(new BallBlock(50 + i * 120, 150, 60, 30, blockTexture, 2, allSceneObjects, pointsPtr));
+				allSceneObjects.push_back(new BallBlock(50 + i * 120, 150, 60, 30, "res/textures/BallBlock.png", 2, allSceneObjects, pointsPtr));
 			}
 		}
 		else if (currentLevel > 5)
 		{
-			Texture* texture = new Texture("res/textures/winScreen2.png");
-
-			allSceneObjects.push_back(new Block(0, 0, windowWidth, windowHeight, texture, 2, pointsPtr));
-
+			allSceneObjects.push_back(new Block(0, 0, windowWidth, windowHeight, "res/textures/winScreen2.png", 2, pointsPtr));
 		}
 
 	}

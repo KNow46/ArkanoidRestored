@@ -11,7 +11,7 @@
 class Background : public GameObject
 {
 public:
-    Background(std::string animationPath, const Texture* basicTexture, int framesCount);
+    Background(std::string animationPath, int framesCount);
 
     const Texture* getTexture();
 

@@ -3,8 +3,8 @@
 #include "HighScoresButton.h"
 #include "Text.h"
 
-BackButton::BackButton(int x, int y, int height, int width, const Texture* texture, std::vector<InterfaceObject*>& allInterfaceObjects, const Texture* hoverTexture, LevelGenerator& levelGenerator)
-    : InterfaceObject(x, y, height, width, texture, hoverTexture), allInterfaceObjects(allInterfaceObjects), levelGenerator(levelGenerator) {}
+BackButton::BackButton(int x, int y, int height, int width, std::string texturePath, std::string textureHoveredPath, std::vector<InterfaceObject*>& allInterfaceObjects, LevelGenerator& levelGenerator)
+    : InterfaceObject(x, y, height, width, texturePath, textureHoveredPath), allInterfaceObjects(allInterfaceObjects), levelGenerator(levelGenerator) {}
 
 void BackButton::onClick() 
 {
@@ -19,14 +19,9 @@ void BackButton::onClick()
         allInterfaceObjects.pop_back();
     }
 
-    Texture* startButtonTexture = new Texture("res/textures/startButton.png");
-    Texture* startButtonHoveredTexture = new Texture("res/textures/startButtonHovered.png");
-
-    StartButton* startButton = new StartButton(windowWidth / 2 - 75, 100, 150, 80, startButtonTexture, allInterfaceObjects, startButtonHoveredTexture, levelGenerator);
+    StartButton* startButton = new StartButton(windowWidth / 2 - 75, 100, 150, 80, "res/textures/startButton.png", "res/textures/startButtonHovered.png", allInterfaceObjects, levelGenerator);
     allInterfaceObjects.push_back(startButton);
 
-    Texture* highscoresButtonTexture = new Texture("res/textures/highscoresButton.png");
-    Texture* highscoresButtonHoveredTexture = new Texture("res/textures/highscoresButtonHovered.png");
-    HighscoresButton* highscoresButton = new HighscoresButton(windowWidth / 2 - 75, 200, 150, 80, highscoresButtonTexture, allInterfaceObjects, highscoresButtonHoveredTexture, levelGenerator);
+    HighscoresButton* highscoresButton = new HighscoresButton(windowWidth / 2 - 75, 200, 150, 80, "res/textures/highscoresButton.png","res/textures/highscoresButtonHovered.png", allInterfaceObjects , levelGenerator);
     allInterfaceObjects.push_back(highscoresButton);
 }

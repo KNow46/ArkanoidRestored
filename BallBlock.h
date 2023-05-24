@@ -7,7 +7,7 @@
 class BallBlock : public Block
 {
 public:
-	BallBlock(int x, int y, int height, int width, const Texture* texture, int hp, std::vector <GameObject*>& allSceneObjects, Text* points);
+	BallBlock(int x, int y, int height, int width, std::string texturePath, int hp, std::vector <GameObject*>& allSceneObjects, Text* points);
 
 	virtual void ballCollisionEffect(int damage);
 

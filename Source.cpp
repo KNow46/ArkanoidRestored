@@ -320,21 +320,14 @@ int main(void)
 
        // level1(allSceneObjects);
 
-        Texture* startButtonTexture = new Texture("res/textures/startButton.png");
-        Texture* startButtonHoveredTexture = new Texture("res/textures/startButtonHovered.png");
-
-
         LevelGenerator levelGenerator(allSceneObjects, allInterfaceObjects);
 
-        StartButton *startButton= new StartButton(windowWidth / 2 - 75, 100, 150, 80, startButtonTexture, allInterfaceObjects, startButtonHoveredTexture, levelGenerator);
+        StartButton *startButton= new StartButton(windowWidth / 2 - 75, 100, 150, 80, "res/textures/startButton.png", "res/textures/startButtonHovered.png",allInterfaceObjects, levelGenerator);
         allInterfaceObjects.push_back(startButton);
 
 
-        Texture* highscoresButtonTexture = new Texture("res/textures/highscoresButton.png");
-        Texture* highscoresButtonHoveredTexture = new Texture("res/textures/highscoresButtonHovered.png");
 
-
-        HighscoresButton* highscoresButton = new HighscoresButton(windowWidth / 2 - 75, 200, 150, 80, highscoresButtonTexture, allInterfaceObjects, highscoresButtonHoveredTexture, levelGenerator);
+        HighscoresButton* highscoresButton = new HighscoresButton(windowWidth / 2 - 75, 200, 150, 80, "res/textures/highscoresButton.png", "res/textures/highscoresButtonHovered.png", allInterfaceObjects, levelGenerator);
         allInterfaceObjects.push_back(highscoresButton);
        
 
@@ -345,8 +338,7 @@ int main(void)
 
         glfwSetMouseButtonCallback(window, mouse_button_callback);
         glfwSetKeyCallback(window, keyCallback);
-        
-        //Texture* texture2 = new Texture("res/textures/winScreen.png");
+
 
 
         int loopCounter = 0;
@@ -391,8 +383,7 @@ int main(void)
                         allSceneObjects.pop_back();
 
 
-                        Texture* loseScreenTexture = new Texture("res/textures/highscoresButton.png");
-                        allInterfaceObjects.push_back(new Image(50, 50, windowWidth - 100, windowHeight - 100, loseScreenTexture));
+                        allInterfaceObjects.push_back(new Image(50, 50, windowWidth - 100, windowHeight - 100, "res/textures/highscoresButton.png"));
                         std::cout << allInterfaceObjects.size() << "adadadad";
                     }
                 }

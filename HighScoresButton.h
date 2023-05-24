@@ -7,7 +7,7 @@
 class HighscoresButton : public InterfaceObject 
 {
 public:
-    HighscoresButton(int x, int y, int height, int width, const Texture* texture, std::vector<InterfaceObject*>& allInterfaceObjects, const Texture* hoverTexture, LevelGenerator& levelGenerator);
+    HighscoresButton(int x, int y, int height, int width, std::string texturePath, std::string textureHoveredPath, std::vector<InterfaceObject*>& allInterfaceObjects, LevelGenerator& levelGenerator);
 
     void onClick();
 

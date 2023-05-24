@@ -14,7 +14,7 @@ void Block::ballCollisionEffect(int damage)
 
 void Block::addCrack(int x, int y)
 {
-		BlockCrack * blockCrack = new BlockCrack(x-15, y-15, 30, 30, crackTexture);
+		BlockCrack * blockCrack = new BlockCrack(x-15, y-15, 30, 30, crackTexturePath);
 		cracks.push_back(blockCrack);
 
 }

@@ -2,8 +2,8 @@
 
 bool StartButton::gameIsStarted = false;
 
-StartButton::StartButton(int x, int y, int height, int width, const Texture* texture, std::vector<InterfaceObject*>& allInterfaceObjects, const Texture* hoverTexture, LevelGenerator& levelGenerator)
-    : InterfaceObject(x, y, height, width, texture, hoverTexture), allInterfaceObjects(allInterfaceObjects), levelGenerator(levelGenerator)
+StartButton::StartButton(int x, int y, int height, int width, std::string texturePath, std::string textureHoveredPath, std::vector<InterfaceObject*>& allInterfaceObjects, LevelGenerator& levelGenerator)
+    : InterfaceObject(x, y, height, width, texturePath, textureHoveredPath), allInterfaceObjects(allInterfaceObjects), levelGenerator(levelGenerator)
 {
 }
 
@@ -20,8 +20,7 @@ void StartButton::onClick()
         allInterfaceObjects.pop_back();
     }
 
-    Texture* pointsBackground = new Texture("res/textures/textBackgroundGray.png");
-    Text* points = new Text(500, 29, 100, 20, pointsBackground, "0", 10, Text::points);
+    Text* points = new Text(500, 29, 100, 20, "0", 10, Text::points);
     pointsPtr = points;
     allInterfaceObjects.push_back(points);
 

@@ -6,8 +6,8 @@
 class GameObject
 {
 public:
-    GameObject(int x, int y,int width, int height,  const Texture *texture )
-        :x(x), y(y), height(height), width(width), texture(texture), isDestroyed(false) {};
+    GameObject(int x, int y, int width, int height, std::string texturePath)
+        :x(x), y(y), height(height), width(width), texture(new Texture(texturePath)), isDestroyed(false) {};
 
     ~GameObject() { delete texture; };
 
@@ -35,7 +35,7 @@ protected:
     bool isDestroyed;
     int height;
     int width;
-    const Texture* texture;
+    Texture* texture;
    // int graphicLayerImportance; //for example 0 - background
     double x;
     double y;

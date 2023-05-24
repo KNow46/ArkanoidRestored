@@ -1,7 +1,7 @@
 #include "Rocket.h"
 
-Rocket::Rocket(int x, int y, int height, int width, const Texture* texture, std::string animationPath, int framesCount, owner owner)
-    : GameObject(x, y, height, width, texture), framesCounter(-1), framesCount(framesCount), frames(MyContainer<Texture*>()), speed(0), rocketOwner(owner)
+Rocket::Rocket(int x, int y, int height, int width, std::string animationPath, int framesCount, owner owner)
+    : GameObject(x, y, height, width, "res/textures/empty.png"), framesCounter(-1), framesCount(framesCount), frames(MyContainer<Texture*>()), speed(0), rocketOwner(owner)
 {
     for (int i = 0; i < framesCount; i++)
     {

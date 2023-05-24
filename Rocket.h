@@ -8,7 +8,7 @@ enum owner { player, enemy };
 class Rocket : public GameObject
 {
 public:
-    Rocket(int x, int y, int height, int width, const Texture* texture, std::string animationPath, int framesCount, owner owner);
+    Rocket(int x, int y, int height, int width, std::string animationPath, int framesCount, owner owner);
 
     void setSpeed(double x);
 

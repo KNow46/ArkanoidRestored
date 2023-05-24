@@ -6,8 +6,8 @@
 class BlockCrack : public GameObject
 {
 public:
-	BlockCrack(int x, int y, int height, int width, const Texture* texture)
-		:GameObject(x, y, height, width, texture){};
+	BlockCrack(int x, int y, int height, int width, std::string texturePath)
+		:GameObject(x, y, height, width, texturePath){};
 
 	void ballCollisionEffect() {};
 

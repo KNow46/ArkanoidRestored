@@ -8,8 +8,8 @@
 class Block: public GameObject
 {
 public:
-	Block(int x, int y, int height, int width, const Texture* texture, int hp, Text* points)
-		:GameObject(x, y, height, width, texture), hp(hp), crackTexture(new Texture("res/textures/crack.png")), points(points){};
+	Block(int x, int y, int height, int width, std::string texturePath, int hp, Text* points)
+		:GameObject(x, y, height, width, texturePath), hp(hp), crackTexturePath("res/textures/crack.png"), points(points){};
 
 	virtual void ballCollisionEffect(int damage);
 	void ballCollisionEffect() {};
@@ -22,7 +22,7 @@ public:
 	}
 protected:
 	int hp;
-	Texture* crackTexture;
+	std::string crackTexturePath;
 	std::vector<BlockCrack*> cracks;
 	static int* playerPoints;
 	Text* points;

@@ -4,10 +4,10 @@
 class InterfaceObject : public GameObject
 {
 public:
-	InterfaceObject(int x, int y, int height, int width, const Texture* texture, const Texture* hoverTexture)
-		:GameObject(x, y, height, width, texture),  isHovered(0), hoverTexture(hoverTexture) {};
-	InterfaceObject(int x, int y, int height, int width, const Texture* texture)
-		:GameObject(x, y, height, width, texture), isHovered(0), hoverTexture(texture) {};
+	InterfaceObject(int x, int y, int height, int width, std::string texturePath, std::string textureHoveredPath)
+		:GameObject(x, y, height, width, texturePath),  isHovered(0), hoverTexture(new Texture(textureHoveredPath)) {};
+	InterfaceObject(int x, int y, int height, int width, std::string texturePath)
+		:GameObject(x, y, height, width, texturePath), isHovered(0), hoverTexture(new Texture(texturePath)) {};
 
 	virtual void onClick() {};
 	void ballCollisionEffect() {};
@@ -16,7 +16,7 @@ public:
 	{
 		this->isHovered = isHovered;
 	}
-	virtual const Texture* getTexture()
+	virtual Texture* getTexture()
 	{ 
 		if (isHovered == false)
 			return texture;
@@ -26,5 +26,5 @@ public:
 protected:
 	//bool isVisible;
 	bool isHovered;
-	const Texture* hoverTexture;
+	Texture* hoverTexture;
 };

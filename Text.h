@@ -10,8 +10,8 @@ class Text : public InterfaceObject
 public:
 	enum textObjectType { points, none };
 
-	Text(int x, int y, int width, int height, const Texture* texture, std::string strText, int fontSize, textObjectType type);
-	Text(int x, int y, int width, int height, const Texture* texture, std::string strText, int fontSize, std::string fontPath, textObjectType type);
+	Text(int x, int y, int width, int height, std::string strText, int fontSize, textObjectType type);
+	Text(int x, int y, int width, int height, std::string strText, int fontSize, std::string fontPath, textObjectType type);
 
 	std::vector<Image*> getText();
 

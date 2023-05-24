@@ -1,7 +1,7 @@
 #include "Background.h"
 
-Background::Background(std::string animationPath, const Texture* basicTexture, int framesCount)
-    : GameObject(0, 0, windowWidth, windowHeight, basicTexture), framesCounter(-1), framesCount(framesCount), frames(MyContainer<Texture*>())
+Background::Background(std::string animationPath, int framesCount)
+    : GameObject(0, 0, windowWidth, windowHeight, "res/textures/empty.png"), framesCounter(-1), framesCount(framesCount), frames(MyContainer<Texture*>())
 {
     for (int i = 0; i < framesCount; i++)
     {
