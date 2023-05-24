@@ -32,7 +32,7 @@
 //transforms to range (-1,1)
 //if transforming point set length to 0
 //(isX == 1) if you are transforming x coordinate
-float transformToOpenGl(const float &position, const float &length, bool isX)
+float transformToOpenGl(const float &position, const float &length, const bool &isX)
 {
     float result = 0.0f;
     if (isX == false)
@@ -163,6 +163,21 @@ bool checkWin(std::vector<GameObject*> &allSceneObjects)
         }
     }
     return win;
+}
+bool checkLose(std::vector<GameObject*>& allSceneObjects)
+{
+    bool lose = true;
+    for (int i = 0; i < allSceneObjects.size(); i++)
+    {
+        if (dynamic_cast<Ball*>(allSceneObjects[i]))
+        {
+            if (allSceneObjects[i]->getIsDestroyed() == false)
+            {
+               lose = false;
+            }
+        }
+    }
+    return lose;
 }
 
 struct UserData
@@ -323,8 +338,6 @@ int main(void)
         allInterfaceObjects.push_back(highscoresButton);
        
 
-       // allInterfaceObjects[0]->setIsVisible(true);
-
 
        //Rocket* rocket = dynamic_cast<Rocket*>(allSceneObjects[0]);
 		
@@ -350,11 +363,38 @@ int main(void)
             {
                 glfwGetCursorPos(window, &xpos, &ypos);
 
-                if (checkWin(allSceneObjects) == true && startButton->isGameStarted() == true)
+                if(loopCounter % 20 == 0)//for optimization
                 {
+                    if (checkWin(allSceneObjects) == true && startButton->isGameStarted() == true)
+                    {
 
-                    levelGenerator.increaseLevel();
-                    levelGenerator.generate();
+                        levelGenerator.increaseLevel();
+                        levelGenerator.generate();
+                    }
+                    else if (checkLose(allSceneObjects) == true && startButton->isGameStarted() == true)
+                    {
+                        while (!allInterfaceObjects.empty())
+                        {
+                            delete allInterfaceObjects.back();
+                            allInterfaceObjects.pop_back();
+                        }
+                        while (!allSceneObjects.empty())
+                        {
+                            delete allSceneObjects.back();
+                            allSceneObjects.pop_back();
+                        }
+                      
+                     
+
+                        allSceneObjects.push_back(new Ball(200, 300, 40, 40, -4, -4, "res/textures/ballAnimation", 15));
+                        delete allSceneObjects.back();
+                        allSceneObjects.pop_back();
+
+
+                        Texture* loseScreenTexture = new Texture("res/textures/highscoresButton.png");
+                        allInterfaceObjects.push_back(new Image(50, 50, windowWidth - 100, windowHeight - 100, loseScreenTexture));
+                        std::cout << allInterfaceObjects.size() << "adadadad";
+                    }
                 }
 
                 for (int i = 0; i < allSceneObjects.size(); i++)
@@ -388,7 +428,8 @@ int main(void)
 
 
                 loopCounter++;
-                if (loopCounter % 300 == 0)
+
+                if (loopCounter % 300 == 0)//for optimization
                 {
                     clearDestroyed(allSceneObjects);
                 }

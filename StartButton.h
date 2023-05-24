@@ -13,11 +13,11 @@ public:
 
     Text* getPointsPtr();
 
-    bool isGameStarted();
+    static bool isGameStarted();
 
 protected:
     std::vector<InterfaceObject*>& allInterfaceObjects;
     Text* pointsPtr;
     LevelGenerator& levelGenerator;
-    bool gameIsStarted;
+    static bool gameIsStarted;
 };

@@ -7,8 +7,8 @@
 #include <mmsystem.h>
 #include "Global.h"
 
-Ball::Ball(int x, int y, int height, int width, const Texture* texture, float speedX, float speedY, std::string animationPath, int framesCount)
-    : GameObject(x, y, height, width, texture), speedX(speedX), speedY(speedY), baseSpeedX(speedX), baseSpeedY(speedY),
+Ball::Ball(int x, int y, int height, int width, float speedX, float speedY, std::string animationPath, int framesCount)
+    : GameObject(x, y, height, width, new Texture("res/textures/empty.png")), speedX(speedX), speedY(speedY), baseSpeedX(speedX), baseSpeedY(speedY),
     framesCounter(-1), framesCount(framesCount), frames(MyContainer<Texture*>())
 {
     speed = sqrt(speedX * speedX + speedY * speedY);

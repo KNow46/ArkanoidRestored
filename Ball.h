@@ -6,7 +6,7 @@
 class Ball : public GameObject
 {
 public:
-    Ball(int x, int y, int height, int width, const Texture* texture, float speedX, float speedY, std::string animationPath, int framesCount);
+    Ball(int x, int y, int height, int width, float speedX, float speedY, std::string animationPath, int framesCount);
     
     ~Ball();
 

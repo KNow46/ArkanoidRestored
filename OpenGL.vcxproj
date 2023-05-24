@@ -182,6 +182,7 @@
     <ClInclude Include="HighScoresButton.h" />
     <ClInclude Include="Image.h" />
     <ClInclude Include="IndexBuffer.h" />
+    <ClInclude Include="LevelGenerator.h" />
     <ClInclude Include="MyContainer.h" />
     <ClInclude Include="Renderer.h" />
     <ClInclude Include="Rocket.h" />

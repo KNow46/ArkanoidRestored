@@ -1,7 +1,9 @@
 #include "StartButton.h"
 
+bool StartButton::gameIsStarted = false;
+
 StartButton::StartButton(int x, int y, int height, int width, const Texture* texture, std::vector<InterfaceObject*>& allInterfaceObjects, const Texture* hoverTexture, LevelGenerator& levelGenerator)
-    : InterfaceObject(x, y, height, width, texture, hoverTexture), allInterfaceObjects(allInterfaceObjects), levelGenerator(levelGenerator), gameIsStarted(false)
+    : InterfaceObject(x, y, height, width, texture, hoverTexture), allInterfaceObjects(allInterfaceObjects), levelGenerator(levelGenerator)
 {
 }
 
