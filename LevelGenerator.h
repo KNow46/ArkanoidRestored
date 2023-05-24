@@ -18,12 +18,17 @@ public:
 	{
 		pointsPtr = ptr;
 	}
+
+	void setCurrentLevel(int level)
+	{
+		currentLevel = level;
+	}
 	void generate()
 	{
 
-		int size = allSceneObjects.size();
-		for (int i = 0; i < size; i++)
+		while(!allSceneObjects.empty())
 		{
+			delete allSceneObjects.back();
 			allSceneObjects.pop_back();
 		}
 		if (currentLevel == 1)
@@ -35,9 +40,14 @@ public:
 
 			allSceneObjects.push_back(new Ball(200, 300, 40, 40, -4, -4, "res/textures/ballAnimation", 15));
 
-			for (int i = 0; i < 9; i++)
+
+			for (int i = 0; i < 1; i++)
 			{
-				allSceneObjects.push_back(new Block(50 + i * 60, 200, 60, 30,"res/textures/block.png", 2, pointsPtr));
+				allSceneObjects.push_back(new Block(50 + i * 60, 200, 60, 30, "res/textures/block.png", 2, pointsPtr));
+			}
+			for (int i = 0; i < 5; i++)
+			{
+				allSceneObjects.push_back(new BallBlock(50 + i * 120, 150, 60, 30, "res/textures/BallBlock.png", 2, allSceneObjects, pointsPtr));
 			}
 		}
 		else if (currentLevel == 2)

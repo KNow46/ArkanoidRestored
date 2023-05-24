@@ -15,6 +15,8 @@ public:
 
     static bool isGameStarted();
 
+    void setIsGameStarted(bool);
+
 protected:
     std::vector<InterfaceObject*>& allInterfaceObjects;
     Text* pointsPtr;

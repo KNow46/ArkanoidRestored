@@ -10,7 +10,7 @@ StartButton::StartButton(int x, int y, int height, int width, std::string textur
 void StartButton::onClick()
 {
     gameIsStarted = true;
-    isDestroyed = true;
+
     while (!allInterfaceObjects.empty())
     {
         if (allInterfaceObjects.back() != this)
@@ -26,6 +26,7 @@ void StartButton::onClick()
 
     levelGenerator.setPointsPtr(pointsPtr);
     levelGenerator.generate();
+    delete this;
 }
 
 Text* StartButton::getPointsPtr()
@@ -36,4 +37,8 @@ Text* StartButton::getPointsPtr()
 bool StartButton::isGameStarted()
 {
     return gameIsStarted;
+}
+void StartButton::setIsGameStarted(bool x)
+{
+    gameIsStarted = x;
 }

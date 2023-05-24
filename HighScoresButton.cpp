@@ -4,18 +4,20 @@
 #include "BackButton.h"
 #include "Image.h"
 #include "Global.h"
+#include "StartButton.h"
 HighscoresButton::HighscoresButton(int x, int y, int height, int width, std::string texturePath, std::string textureHoveredPath, std::vector<InterfaceObject*>& allInterfaceObjects, LevelGenerator& levelGenerator)
     : InterfaceObject(x, y, height, width, texturePath, textureHoveredPath), allInterfaceObjects(allInterfaceObjects), allInterfaceObjectsCopy(allInterfaceObjects), levelGenerator(levelGenerator) {}
 
 void HighscoresButton::onClick() {
     isDestroyed = true;
     while (!allInterfaceObjects.empty()) {
-        if (allInterfaceObjects.back() != this) {
-            delete allInterfaceObjects.back();
+        if (allInterfaceObjects.back() != this) 
+        {
+            if(!dynamic_cast<StartButton*>(allInterfaceObjects.back()))
+                delete allInterfaceObjects.back();
         }
         allInterfaceObjects.pop_back();
     }
-
     std::ifstream file("HighScores.txt");
     std::string line;
 

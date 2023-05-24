@@ -28,6 +28,7 @@
 #include "StartButton.h"
 #include "Text.h"
 #include "HighScoresButton.h"
+#include "GameOverScreen.h"
 
 //transforms to range (-1,1)
 //if transforming point set length to 0
@@ -198,17 +199,24 @@ void mouse_button_callback(GLFWwindow* window, int button, int action, int mods)
         void* userPointer = glfwGetWindowUserPointer(window);
         if (UserData* userData = static_cast<UserData*>(userPointer))
         {
+            
             for (int i = 0; i < userData->allInterfaceObjects->size(); i++)
             {
+ 
                 if (xpos > (*userData->allInterfaceObjects)[i]->getX() && xpos < (*userData->allInterfaceObjects)[i]->getX() + (*userData->allInterfaceObjects)[i]->getWidth())
                 {
                     if (ypos > (*userData->allInterfaceObjects)[i]->getY() && ypos < (*userData->allInterfaceObjects)[i]->getY() + (*userData->allInterfaceObjects)[i]->getHeight())
                     {
                         (*userData->allInterfaceObjects)[i]->onClick();
+                        break;
                     }
                 }
+                
             }
+            std::cout << "aaaa" << std::endl;
+            
         }
+       
     }
 }
 void keyCallback(GLFWwindow* window, int key, int scancode, int action, int mods)
@@ -233,9 +241,10 @@ void keyCallback(GLFWwindow* window, int key, int scancode, int action, int mods
 }
 void hoverInterfaceObjects(int x, int y, std::vector<InterfaceObject*>& allInterfaceObjects)
 {
+    
     for (int i = 0; i < allInterfaceObjects.size(); i++)
     {
-      
+        std::cout << "size: " << allInterfaceObjects.size() << std::endl;
         if (x > allInterfaceObjects[i]->getX() && x < allInterfaceObjects[i]->getX() + allInterfaceObjects[i]->getWidth() && y > allInterfaceObjects[i]->getY() && y < allInterfaceObjects[i]->getY() + allInterfaceObjects[i]->getHeight())
         {
             allInterfaceObjects[i]->setIsHovered(true);
@@ -318,11 +327,9 @@ int main(void)
 
         glfwSetWindowUserPointer(window, &userData);
 
-       // level1(allSceneObjects);
-
         LevelGenerator levelGenerator(allSceneObjects, allInterfaceObjects);
 
-        StartButton *startButton= new StartButton(windowWidth / 2 - 75, 100, 150, 80, "res/textures/startButton.png", "res/textures/startButtonHovered.png",allInterfaceObjects, levelGenerator);
+        StartButton *startButton = new StartButton(windowWidth / 2 - 75, 100, 150, 80, "res/textures/startButton.png", "res/textures/startButtonHovered.png",allInterfaceObjects, levelGenerator);
         allInterfaceObjects.push_back(startButton);
 
 
@@ -330,7 +337,6 @@ int main(void)
         HighscoresButton* highscoresButton = new HighscoresButton(windowWidth / 2 - 75, 200, 150, 80, "res/textures/highscoresButton.png", "res/textures/highscoresButtonHovered.png", allInterfaceObjects, levelGenerator);
         allInterfaceObjects.push_back(highscoresButton);
        
-
 
        //Rocket* rocket = dynamic_cast<Rocket*>(allSceneObjects[0]);
 		
@@ -348,6 +354,9 @@ int main(void)
         double lastTime = glfwGetTime();
         int frameCount = 0;
 
+        bool isGameWon = false;
+        bool isGameLost = false;
+        
         /* Loop until the user closes the window */
         while (!glfwWindowShouldClose(window))
         {
@@ -357,13 +366,12 @@ int main(void)
 
                 if(loopCounter % 20 == 0)//for optimization
                 {
-                    if (checkWin(allSceneObjects) == true && startButton->isGameStarted() == true)
+                    if (checkWin(allSceneObjects) == true && StartButton::isGameStarted() == true && !isGameLost)
                     {
-
                         levelGenerator.increaseLevel();
                         levelGenerator.generate();
                     }
-                    else if (checkLose(allSceneObjects) == true && startButton->isGameStarted() == true)
+                    else if (checkLose(allSceneObjects) == true && StartButton::isGameStarted() == true && !isGameLost)
                     {
                         while (!allInterfaceObjects.empty())
                         {
@@ -375,19 +383,18 @@ int main(void)
                             delete allSceneObjects.back();
                             allSceneObjects.pop_back();
                         }
+                        isGameLost = true;
+
                       
-                     
+                        startButton = new StartButton(windowWidth / 2 - 75, 100, 150, 80, "res/textures/startButton.png", "res/textures/startButtonHovered.png", allInterfaceObjects, levelGenerator);
+                        highscoresButton = new HighscoresButton(windowWidth / 2 - 75, 200, 150, 80, "res/textures/highscoresButton.png", "res/textures/highscoresButtonHovered.png", allInterfaceObjects, levelGenerator);
+    
+                        allInterfaceObjects.push_back(new GameOverScreen(50, 50, windowWidth - 100, windowHeight - 100, "res/textures/highscoresButton.png", startButton, highscoresButton, allInterfaceObjects, isGameLost));
 
-                        allSceneObjects.push_back(new Ball(200, 300, 40, 40, -4, -4, "res/textures/ballAnimation", 15));
-                        delete allSceneObjects.back();
-                        allSceneObjects.pop_back();
-
-
-                        allInterfaceObjects.push_back(new Image(50, 50, windowWidth - 100, windowHeight - 100, "res/textures/highscoresButton.png"));
-                        std::cout << allInterfaceObjects.size() << "adadadad";
+                        levelGenerator.setCurrentLevel(1);
+                    
                     }
                 }
-
                 for (int i = 0; i < allSceneObjects.size(); i++)
                 {
                     if (dynamic_cast<Rocket*>(allSceneObjects[i]))
@@ -400,16 +407,18 @@ int main(void)
                         }
                     }
                 }
-
+                
                 hoverInterfaceObjects(xpos, ypos, allInterfaceObjects);
+               
                 renderer.Clear();
-
+              
+               
                 rendererScene(allSceneObjects, renderer, shader, va, vb, layout, ib, window);
                 rendererInterfaceObjects(allInterfaceObjects, renderer, shader, va, vb, layout, ib, window);
 
                 collisionManager.checkCollisions();
 
-
+               
                 lastFramesCursorPosition[5] = lastFramesCursorPosition[4];
                 lastFramesCursorPosition[4] = lastFramesCursorPosition[3];
                 lastFramesCursorPosition[3] = lastFramesCursorPosition[2];
@@ -445,6 +454,9 @@ int main(void)
                 /* Swap front and back buffers */
                 GLCall(glfwSwapBuffers(window));
             }
+           // else
+                //std::cout << "paused" << std::endl;
+
             /* Poll for and process events */
             GLCall(glfwPollEvents());
         }

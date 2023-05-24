@@ -10,11 +10,13 @@ void BackButton::onClick()
 {
 
     isDestroyed = true;
+
     while (!allInterfaceObjects.empty()) 
     {
-        if (allInterfaceObjects.back () != this) 
+        if (allInterfaceObjects.back() != this)
         {
-            delete allInterfaceObjects.back();
+            if (!dynamic_cast<StartButton*>(allInterfaceObjects.back()))
+                delete allInterfaceObjects.back();
         }
         allInterfaceObjects.pop_back();
     }

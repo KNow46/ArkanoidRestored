@@ -24,6 +24,7 @@
     <ProjectGuid>{c43b7a48-f586-4f9b-860b-bbfd0fe22369}</ProjectGuid>
     <RootNamespace>OpenGL</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Arkanoid</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -183,6 +184,7 @@
     <ClInclude Include="Image.h" />
     <ClInclude Include="IndexBuffer.h" />
     <ClInclude Include="LevelGenerator.h" />
+    <ClInclude Include="GameOverScreen.h" />
     <ClInclude Include="MyContainer.h" />
     <ClInclude Include="Renderer.h" />
     <ClInclude Include="Rocket.h" />
