@@ -108,7 +108,7 @@ void rendererInterfaceObjects(std::vector<InterfaceObject*>interfaceObjects, Ren
             renderer.Draw(va, ib, shader);
             if (dynamic_cast<Text*>(interfaceObjects[i]))
             {
-                Text* text = dynamic_cast<Text*>(interfaceObjects[i]);
+                Text* text = static_cast<Text*>(interfaceObjects[i]);
                 glEnable(GL_SCISSOR_TEST);
 
                 glScissor(text->getX(), windowHeight - text->getY() - text->getHeight(), text->getWidth(), text->getHeight());
@@ -213,7 +213,7 @@ void mouse_button_callback(GLFWwindow* window, int button, int action, int mods)
                 }
                 
             }
-            std::cout << "aaaa" << std::endl;
+
             
         }
        
@@ -244,7 +244,6 @@ void hoverInterfaceObjects(int x, int y, std::vector<InterfaceObject*>& allInter
     
     for (int i = 0; i < allInterfaceObjects.size(); i++)
     {
-        std::cout << "size: " << allInterfaceObjects.size() << std::endl;
         if (x > allInterfaceObjects[i]->getX() && x < allInterfaceObjects[i]->getX() + allInterfaceObjects[i]->getWidth() && y > allInterfaceObjects[i]->getY() && y < allInterfaceObjects[i]->getY() + allInterfaceObjects[i]->getHeight())
         {
             allInterfaceObjects[i]->setIsHovered(true);
@@ -336,9 +335,7 @@ int main(void)
 
         HighscoresButton* highscoresButton = new HighscoresButton(windowWidth / 2 - 75, 200, 150, 80, "res/textures/highscoresButton.png", "res/textures/highscoresButtonHovered.png", allInterfaceObjects, levelGenerator);
         allInterfaceObjects.push_back(highscoresButton);
-       
 
-       //Rocket* rocket = dynamic_cast<Rocket*>(allSceneObjects[0]);
 		
         float lastFramesCursorPosition[6];
 
@@ -389,7 +386,17 @@ int main(void)
                         startButton = new StartButton(windowWidth / 2 - 75, 100, 150, 80, "res/textures/startButton.png", "res/textures/startButtonHovered.png", allInterfaceObjects, levelGenerator);
                         highscoresButton = new HighscoresButton(windowWidth / 2 - 75, 200, 150, 80, "res/textures/highscoresButton.png", "res/textures/highscoresButtonHovered.png", allInterfaceObjects, levelGenerator);
     
-                        allInterfaceObjects.push_back(new GameOverScreen(50, 50, windowWidth - 100, windowHeight - 100, "res/textures/highscoresButton.png", startButton, highscoresButton, allInterfaceObjects, isGameLost));
+                        allInterfaceObjects.push_back(new GameOverScreen(windowWidth*0.25, windowHeight*0.1, windowWidth *0.5, windowHeight *0.8, "res/textures/gameoverScreen.png", "res/textures/gameoverScreenHovered.png", startButton, highscoresButton, allInterfaceObjects, isGameLost, points));
+
+                        vector<InterfaceObject*> swapVec;
+                        for (int i = 0; i < allInterfaceObjects.size(); i++)
+                        {
+                            swapVec.push_back(allInterfaceObjects[i]);
+                        }
+                        for (int i = 0; i < allInterfaceObjects.size(); i++)
+                        {
+                           allInterfaceObjects[i] = swapVec[allInterfaceObjects.size() - i - 1];
+                        }
 
                         levelGenerator.setCurrentLevel(1);
                     
@@ -399,7 +406,7 @@ int main(void)
                 {
                     if (dynamic_cast<Rocket*>(allSceneObjects[i]))
                     {
-                        Rocket* rocket = dynamic_cast<Rocket*>(allSceneObjects[i]);
+                        Rocket* rocket = static_cast<Rocket*>(allSceneObjects[i]);
                         if (rocket->getOwner() == player)
                         {
                             rocket->setX(xpos - rocket->getWidth() / 2);
@@ -447,7 +454,7 @@ int main(void)
 
                     frameCount = 0;
                     lastTime = currentTime;
-                    std::cout << allSceneObjects.size() << std::endl;
+                    std::cout << allInterfaceObjects.size() << std::endl;
                 }
 
 

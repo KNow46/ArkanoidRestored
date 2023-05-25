@@ -8,7 +8,8 @@
 HighscoresButton::HighscoresButton(int x, int y, int height, int width, std::string texturePath, std::string textureHoveredPath, std::vector<InterfaceObject*>& allInterfaceObjects, LevelGenerator& levelGenerator)
     : InterfaceObject(x, y, height, width, texturePath, textureHoveredPath), allInterfaceObjects(allInterfaceObjects), allInterfaceObjectsCopy(allInterfaceObjects), levelGenerator(levelGenerator) {}
 
-void HighscoresButton::onClick() {
+void HighscoresButton::onClick()
+{
     isDestroyed = true;
     while (!allInterfaceObjects.empty()) {
         if (allInterfaceObjects.back() != this) 

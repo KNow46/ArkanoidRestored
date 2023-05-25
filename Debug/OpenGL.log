@@ -1,80 +1,8 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (OpenGL.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-  BackButton.cpp
-C:\Users\Krzysztof\source\repos\arkanoidbackup\GameObject.h(20,32): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\GameObject.h(22,32): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
-  Background.cpp
-C:\Users\Krzysztof\source\repos\arkanoidbackup\GameObject.h(20,32): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\GameObject.h(22,32): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
-  Ball.cpp
-C:\Users\Krzysztof\source\repos\arkanoidbackup\GameObject.h(20,32): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\GameObject.h(22,32): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\Ball.cpp(80,12): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\Ball.cpp(85,12): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\Ball.cpp(90,12): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\Ball.cpp(95,12): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
-  BallBlock.cpp
-C:\Users\Krzysztof\source\repos\arkanoidbackup\GameObject.h(20,32): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\GameObject.h(22,32): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\BallBlock.cpp(13,51): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\BallBlock.cpp(13,39): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-  Block.cpp
-C:\Users\Krzysztof\source\repos\arkanoidbackup\GameObject.h(20,32): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\GameObject.h(22,32): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
-  CollisionManager.cpp
-C:\Users\Krzysztof\source\repos\arkanoidbackup\GameObject.h(20,32): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\GameObject.h(22,32): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\CollisionManager.cpp(9,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Krzysztof\source\repos\arkanoidbackup\CollisionManager.cpp(20,28): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\CollisionManager.cpp(25,43): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\CollisionManager.cpp(30,29): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\CollisionManager.cpp(35,23): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Krzysztof\source\repos\arkanoidbackup\CollisionManager.cpp(49,56): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\CollisionManager.cpp(60,37): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\CollisionManager.cpp(61,37): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\CollisionManager.cpp(64,37): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\CollisionManager.cpp(65,34): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\CollisionManager.cpp(68,37): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\CollisionManager.cpp(69,37): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\CollisionManager.cpp(72,34): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\CollisionManager.cpp(73,37): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\CollisionManager.cpp(76,37): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\CollisionManager.cpp(77,37): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\CollisionManager.cpp(80,37): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\CollisionManager.cpp(81,37): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\CollisionManager.cpp(84,37): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\CollisionManager.cpp(85,37): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\CollisionManager.cpp(88,37): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\CollisionManager.cpp(89,37): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\CollisionManager.cpp(90,23): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Krzysztof\source\repos\arkanoidbackup\CollisionManager.cpp(128,57): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\CollisionManager.cpp(128,39): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\CollisionManager.cpp(143,57): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\CollisionManager.cpp(143,39): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\CollisionManager.cpp(158,57): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\CollisionManager.cpp(158,39): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\CollisionManager.cpp(173,57): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\CollisionManager.cpp(173,39): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\CollisionManager.cpp(178,57): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\CollisionManager.cpp(178,39): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\CollisionManager.cpp(186,57): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\CollisionManager.cpp(186,39): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\CollisionManager.cpp(195,57): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\CollisionManager.cpp(195,39): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\CollisionManager.cpp(205,57): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\CollisionManager.cpp(205,39): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-  Global.cpp
-  HighScoresButton.cpp
-C:\Users\Krzysztof\source\repos\arkanoidbackup\GameObject.h(20,32): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\GameObject.h(22,32): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
-  IndexBuffer.cpp
-  Renderer.cpp
-  Rocket.cpp
-C:\Users\Krzysztof\source\repos\arkanoidbackup\GameObject.h(20,32): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\GameObject.h(22,32): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
-  Shader.cpp
   Source.cpp
 C:\Users\Krzysztof\source\repos\arkanoidbackup\GameObject.h(20,32): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
 C:\Users\Krzysztof\source\repos\arkanoidbackup\GameObject.h(22,32): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+C:\Users\Krzysztof\source\repos\arkanoidbackup\GameOverScreen.h(27,75): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
 C:\Users\Krzysztof\source\repos\arkanoidbackup\Source.cpp(41,18): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
 C:\Users\Krzysztof\source\repos\arkanoidbackup\Source.cpp(45,64): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
 C:\Users\Krzysztof\source\repos\arkanoidbackup\Source.cpp(52,23): warning C4018: '<': signed/unsigned mismatch
@@ -101,65 +29,15 @@ C:\Users\Krzysztof\source\repos\arkanoidbackup\Source.cpp(156,23): warning C4018
 C:\Users\Krzysztof\source\repos\arkanoidbackup\Source.cpp(171,23): warning C4018: '<': signed/unsigned mismatch
 C:\Users\Krzysztof\source\repos\arkanoidbackup\Source.cpp(203,31): warning C4018: '<': signed/unsigned mismatch
 C:\Users\Krzysztof\source\repos\arkanoidbackup\Source.cpp(245,23): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Krzysztof\source\repos\arkanoidbackup\Source.cpp(398,35): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Krzysztof\source\repos\arkanoidbackup\Source.cpp(405,47): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\Source.cpp(411,45): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\Source.cpp(411,39): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\Source.cpp(427,47): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-  stb_image.cpp
-  StartButton.cpp
-C:\Users\Krzysztof\source\repos\arkanoidbackup\GameObject.h(20,32): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\GameObject.h(22,32): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
-  Text.cpp
-C:\Users\Krzysztof\source\repos\arkanoidbackup\GameObject.h(20,32): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\GameObject.h(22,32): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.cpp(47,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.cpp(50,12): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.cpp(57,83): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.cpp(57,67): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.cpp(57,47): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.cpp(57,36): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.cpp(63,83): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.cpp(63,67): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.cpp(63,47): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.cpp(63,36): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.cpp(69,83): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.cpp(69,67): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.cpp(69,47): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.cpp(69,36): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.cpp(75,83): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.cpp(75,67): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.cpp(75,47): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.cpp(75,36): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.cpp(81,83): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.cpp(81,67): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.cpp(81,47): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.cpp(81,36): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.cpp(87,83): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.cpp(87,67): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.cpp(87,47): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.cpp(87,36): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.cpp(93,83): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.cpp(93,67): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.cpp(93,47): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.cpp(93,36): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.cpp(99,83): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.cpp(99,67): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.cpp(99,47): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.cpp(99,36): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.cpp(105,83): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.cpp(105,67): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.cpp(105,47): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.cpp(105,36): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.cpp(111,83): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.cpp(111,67): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.cpp(111,47): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Krzysztof\source\repos\arkanoidbackup\Text.cpp(111,36): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-  Texture.cpp
-  VertexArray.cpp
-  VertexBuffer.cpp
-  Generating Code...
-LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
-LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
-glew32s.lib(glew.obj) : warning LNK4099: PDB '' was not found with 'glew32s.lib(glew.obj)' or at ''; linking object as if no debug info
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Source.cpp(391,141): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Source.cpp(391,122): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Source.cpp(391,104): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Source.cpp(391,85): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Source.cpp(394,43): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Source.cpp(398,43): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Source.cpp(407,35): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Source.cpp(414,47): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Source.cpp(420,45): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Source.cpp(420,39): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\Krzysztof\source\repos\arkanoidbackup\Source.cpp(436,47): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
   OpenGL.vcxproj -> C:\Users\Krzysztof\source\repos\arkanoidbackup\Debug\Arkanoid.exe
